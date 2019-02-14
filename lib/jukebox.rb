@@ -20,11 +20,10 @@ end
 
 def play(songs)
   puts("Please enter a song name or number:")
-  ary = [1..10]
   choice = gets.chomp
   if songs.include?(choice)
     puts("Playing #{choice}")
-  elsif ary.include?(choice.to_i)
+  elsif choice.to_i < songs.length && choice.to_i > 0
     puts("Playing #{songs[choice.to_i - 1]}")
   else
     puts("Invalid input, please try again")
