@@ -46,7 +46,6 @@ def run
   while response != "exit"
     puts("Please enter a command:")
     response = gets.strip
-    if
       case response
       when "play"
         play(songs)
@@ -58,7 +57,6 @@ def run
         exit_jukebox
       else
         puts("Invalid Command")
-      end
     end
   end
 end
