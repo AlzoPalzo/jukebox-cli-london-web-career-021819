@@ -27,6 +27,7 @@ def play(songs)
     puts("Playing #{songs[choice.to_i + 1]}")
   else
     puts("Invalid input, please try again")
+  end
 end
 
 def list(songs)
