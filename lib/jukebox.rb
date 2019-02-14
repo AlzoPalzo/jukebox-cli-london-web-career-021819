@@ -42,3 +42,4 @@ end
 def run
 
 end
+play(songs)
