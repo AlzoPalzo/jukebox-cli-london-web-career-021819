@@ -18,7 +18,15 @@ def help
   puts("- exit : exits this program")
 end
 
-def play
+def play(songs)
+  puts("Please enter a song name or number:")
+  choice = gets.chomp
+  song.each_with_index do |song, index|
+    if choice == song || choice ==(index + 1).to_s
+      puts("Playing #{song}")
+    else
+      puts("Invalid input, please try again")
+  end
 end
 
 def list(songs)
@@ -33,4 +41,3 @@ end
 def run
 
 end
-list(songs)
