@@ -52,13 +52,13 @@ def run
         play(songs)
       when "list"
         list(songs)
-      when "help"       
+      when "help"
         help
-      when "exit" 
+      when "exit"
         exit_jukebox
       else
         puts("Invalid Command")
       end
-    end    
+    end
   end
 end
