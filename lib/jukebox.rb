@@ -46,17 +46,17 @@ def run
   while response != "exit"
     puts("Please enter a command:")
     response = gets.strip
-      case response
-      when "play"
-        play(songs)
-      when "list"
-        list(songs)
-      when "help"
-        help
-      when "exit"
-        exit_jukebox
-      else
-        puts("Invalid Command")
+    case response
+    when "play"
+      play(songs)
+    when "list"
+      list(songs)
+    when "help"
+      help
+    when "exit"
+      exit_jukebox
+    else
+      puts("Invalid Command")
     end
   end
 end
